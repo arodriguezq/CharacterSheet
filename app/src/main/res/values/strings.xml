@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Character Sheet</string>
+    <string name="character_creation">Character Creation</string>
+    <string name="select_race">Select your character race</string>
+    <string name="race_name">Race Name</string>
+    <string name="view_details">View Details</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
