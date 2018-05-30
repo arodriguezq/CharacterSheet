@@ -43,7 +43,7 @@ public class RaceRecyclerViewAdapter extends RecyclerView.Adapter<RaceRecyclerVi
         int resID = mContext.getResources().getIdentifier(mData.get(position).getMiniature(), "drawable", mContext.getPackageName());
         holder.miniature.setImageResource(resID);
 
-        holder.more_info.setOnClickListener(v -> Snackbar.make(v,String.format("Race '%s' pressed", mData.get(position).getName()), Snackbar.LENGTH_SHORT).show());
+        holder.more_info.setOnClickListener(v -> Snackbar.make(v,String.format(mContext.getString(R.string.snackbar), mData.get(position).getName()), Snackbar.LENGTH_SHORT).show());
     }
 
 

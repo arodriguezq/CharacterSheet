@@ -4,15 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.CreationActivity"
-    android:background="@color/background">
+    android:background="@color/background"
+    tools:context=".activities.CreationActivity">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/race_recyclerview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scrollbars="vertical">
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_creation_bar"
+        app:layout_constraintTop_toTopOf="parent">
 
     </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/bottom_creation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TODO - Pending to add items"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
